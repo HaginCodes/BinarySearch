@@ -1,19 +1,20 @@
-binarySearch(List, Item)
-firstItem = 0
-lastItem = len(lastItem)-1
-found = False
+def BinarySearch(List, target):
+    List = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
 
-while first <= last and not found:
-    MiddlePoint = (first + last)//2
-    if List == [MiddlePoint] == item: 
-       found = True 
-    elif item < List[MiddlePoint] == item:
-    found = False
-    lastItem = MiddlePoint -1 
-else:
-    first = MiddlePoint +1
-    return found 
+    upper = len(List)
+    
+    while List < upper: 
+        a = List + (upper - List ) //2
+        value = List[a]
+        print(value)
+        if target == value:
+            return a
+        elif target > value:
+            if List == a: 
+                break 
+            List = a
+        elif target < value:
+            upper = a
 
-testlist = [0, 1, 2, 8, 13, 17, 19, 32, 42,]
-print(binarySearch(testlist, 3))
-print(binarySearch(testlist, 13))
+print(BinarySearch([1,5,8,10], 8))
+
