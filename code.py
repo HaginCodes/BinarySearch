@@ -2,7 +2,7 @@ List = ["((2s,3s,5s)-2-(2-(2,6-dimethylphenoxy)acetamido)-5-((s)-3-methyl-2-(2-o
 lengthOfTerm = len(question)
 question = input("what medicine would you like to find?")
 
-
-def chunks(l, n):
-    n = max(1, n)
-    return [l[i:i + n] for i in range(0, len(l), n)]
+List[lengthOfTerm:] # items start through end-1
+List[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]  
